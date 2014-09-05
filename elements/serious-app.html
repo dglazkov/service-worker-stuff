@@ -1,0 +1,46 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+
+<polymer-element name="serious-app">
+<template>
+  <style>
+    :host {
+      flex: 1;
+      display: none;
+    }
+
+    #body {
+      padding-top: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+  </style>
+  <div id="body">
+    <p>This app is:</p>
+    <div id="choices">
+      <paper-button label="AWESOME"></paper-button>
+      <paper-button label="SERIOUSLY AWESOME"></paper-button>
+    </div>
+  </div>
+</template>
+<script>
+
+  Polymer("serious-app", {
+    attached: function() {
+      this.loadSeriousness().then(function() {
+        this.style.display = "block";
+        this.style.backgroundColor = "white";
+      }.bind(this));
+    },
+    loadSeriousness: function() {
+      return new Promise(function(resolve) {
+        setTimeout(resolve, 2000);
+      });
+    }
+  });
+
+</script>
+</polymer-element>
