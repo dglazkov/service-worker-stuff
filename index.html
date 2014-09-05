@@ -4,6 +4,12 @@
   <meta charset="utf-8">
   <title>Service Worker Stuff</title>
   <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes, width=device-width">
+  <script async>
+navigator.serviceWorker.register('worker.js')
+  .then(function(registration) {
+      console.log(registration);
+    });
+  </script>
   <script src="bower_components/platform/platform.js"></script>
   <link rel="import" href="elements/serious-app.html">
   <style>
