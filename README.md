@@ -13,3 +13,5 @@
 ## Developing
 
 1. Run ```grunt server```.
+
+2. Open ```https://localhost:8888/```.
