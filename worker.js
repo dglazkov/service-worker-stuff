@@ -3,10 +3,10 @@ self.debug = {version: 3};
 // FIXME: Make this order-insensitive by using ES6 modules when they
 // are available.
 importScripts(
-    'cache-polyfill/idbhelper.js',
-    'cache-polyfill/cachedb.js',
-    'cache-polyfill/cache.js',
-    'cache-polyfill/caches.js');
+    'bower_components/cache-polyfill/idbhelper.js',
+    'bower_components/cache-polyfill/cachedb.js',
+    'bower_components/cache-polyfill/cache.js',
+    'bower_components/cache-polyfill/caches.js');
 
 // Defines which paths are of interest and will be cached.
 var cachedResourcePath = /^\/$|^\/index\.html$|^\/bower_components\//;
