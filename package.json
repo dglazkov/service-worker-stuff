@@ -1,0 +1,11 @@
+{
+  "name": "service-worker-stuff",
+  "version": "0.0.0",
+  "description": "Service Worker Stuff",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dglazkov/service-worker-stuff.git"
+  },
+  "author": "",
+  "license": ""
+}
