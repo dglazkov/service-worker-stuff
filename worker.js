@@ -2,7 +2,7 @@
 // - Bump the self.debug version line to sanity check the script in Inspector.
 // - Use polyfillCaches.delete('stuff') to trash the cache.
 
-self.debug = {version: 8};
+self.debug = {version: 9};
 
 // FIXME: Make this order-insensitive by using ES6 modules when they
 // are available.
@@ -14,7 +14,7 @@ importScripts(
 
 // Defines which paths are of interest and will be cached.
 var cachedResourcePath =
-    /^\/$|^\/index\.html$|^\/bower_components\/|^\/elements\//;
+    /^\/$|^\/index\.html$|^\/bower_components\/|^\/elements\/|^\/images\//;
 
 self.oninstall = function(event) {
   // Ignore failures from 'create', which probably means the cache
